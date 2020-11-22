@@ -1,10 +1,6 @@
 def add_element(l):
-    l.append(1)
-    l.append(2)
-    l.append(3)
-    l.append(4)
-    l.append(5)
-    print("Essa é a lista com elementos adicionados:", l)
+   for valor in list(range(1, 6)):
+    lista.append(valor)
     return l
 
 def verify_element_3(l):        
