@@ -1,3 +1,8 @@
+#duas soluções diferentes abaixo:
+
+# mostrando apenas os números do vetor fora da lista
+
+
 def vetor_list(vetorList): 
     i = 0
     while i < len(vetorList):
@@ -7,12 +12,8 @@ def vetor_list(vetorList):
     
 vetorList = [1, 4, 9, 22, 18]
 
-# mostrando apenas os números do vetor fora da lista
+# outra função com input do usuário
 
-vetor_list(vetorList)
-
-
-# outra função com usuário add números
 def mostra_vetor():
     lista = []
     while len(lista)<5:
@@ -21,4 +22,5 @@ def mostra_vetor():
     print(lista)
     
 
+vetor_list(vetorList)
 mostra_vetor()
