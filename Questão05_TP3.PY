@@ -20,15 +20,12 @@ def media_heights():
     return m
 
 
-def show_list():
+def calc_list():
     m_t = media_heights()
-    print("A média de altura é: ", m_t, "cm.")
+    print("A média de altura é: ", round(m_t, 2), "cm.")
     for p in range (len(heights)):
         if heights[p] > m_t:
-            line()
             print("Nome/altura dos alunos acima da média: ", names[p],"-", heights[p], "cm.")
-            line()
-
 menu()
 
 while not sair: 
@@ -40,4 +37,5 @@ while not sair:
     h= float(input("Qual é a altura do aluno (em cm, sem vírgula)? "))    
     heights.append(h)       
 
-show_list()
+
+calc_list()
