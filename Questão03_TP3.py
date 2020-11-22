@@ -1,3 +1,5 @@
+#O enunciado não estava muito claro, assim sendo, fiz duas resoluções:
+
 #prmeira função inverte a ordem de leitura
 
 def vetor(vetorWord):
