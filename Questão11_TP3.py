@@ -39,4 +39,6 @@ while True:
     pygame.display.flip()    
     vel_clock.tick(100)
  
+pygame.display.quit()
 pygame.quit()
+exit()
