@@ -18,8 +18,8 @@ pygame.display.set_caption("TP3 - Python - Questão 15")
 
 
 def drawStar(ins, out, side, hole):
-    inside = ins
-    outside = out
+    inside = ins = 3
+    outside = out = 1
     side = side
 
     seq = [ins, out] * 10
