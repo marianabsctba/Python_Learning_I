@@ -20,16 +20,11 @@ pygame.display.set_caption("TP3 - Python - Questão 15")
 def drawStar(ins, out, side, hole):
     ins = 3
     out = 1
-    side = side
-
     seq = [ins, out] * 5
     a = [-50 + a for a in range(0, 600,36)]
-
     ps = [pygame.math.Vector2() for k in range(0,10)]
-
     for x, rad, out in zip(ps, seq, a):
-        x.from_polar((rad*side,out))
-   
+        x.from_polar((rad*side,out))   
     return tuple((p + pygame.math.Vector2(hole)) for p in ps)
 
 ops = True
