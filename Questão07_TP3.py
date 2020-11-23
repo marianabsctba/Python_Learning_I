@@ -1,4 +1,4 @@
-ef show_list(l):
+def show_list(l):
     print("Veja a lista abaixo. Se nada constar é porque está vazia:")
     for x in range(len(l)):
         print(f"Lista: {l[x]}")
