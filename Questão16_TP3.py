@@ -17,19 +17,19 @@ tela = pygame.display.set_mode((SCREEN["x"], SCREEN["y"]))
 pygame.display.set_caption("TP3 - Python - Questão 16")
 new_star = False
 
-def drawStar(ins, out, side, hole):
-    inside = ins
-    outside = out
-    side = side
 
+
+def drawStar(ins, out, side, hole):
     seq = [ins, out] * 5
     a = [-50 + a for a in range(0, 600,36)]
 
     ps = [pygame.math.Vector2() for k in range(0,10)]
 
     for x, rad, out in zip(ps, seq, a):
-        x.from_polar((rad*side,out))   
+        x.from_polar((rad*side,out))
+   
     return tuple((p + pygame.math.Vector2(hole) + (pygame.math.Vector2(0,side))) for p in ps)
+
 
 ops = True
 while ops:
