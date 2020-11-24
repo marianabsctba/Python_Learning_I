@@ -1,4 +1,4 @@
-iimport pygame
+import pygame
 
 
 COMPRIMENTO = 500
