@@ -91,9 +91,9 @@ def verificaPlacar(paleta1, bola, placar, bolaDirx, pontuacao, winner, ohno, pon
         return placar
 
 
-def verifica_dez(placar, ten_points): #inclusão de código (Questão 22) que toca música aos 10 pontos.
+def verifica_dez(placar, pontos): #inclusão de código (Questão 22) que toca música aos 10 pontos.
     if placar%10 == 0 and placar != 0:
-        ten_points.play()
+        pontos.play()
         return False
     return True
     
